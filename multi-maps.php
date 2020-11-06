@@ -41,7 +41,7 @@ if( $location ): ?>
                 <script>
                 mapboxgl.accessToken =
                     'yourtokenhere';
-                var map = new mapboxgl.Map({
+                var map<?php echo ($counter); ?> = new mapboxgl.Map({
                     container: 'map<?php echo ($counter); ?>',
                     style: 'yourstylehere',
                     center: [<?php echo esc_attr($location['lng']); ?>,
