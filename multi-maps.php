@@ -40,10 +40,10 @@ if( $location ): ?>
                 <div id='map<?php echo ($counter); ?>' class="map" style='width: 100%; height: 300px;'></div>
                 <script>
                 mapboxgl.accessToken =
-                    'pk.eyJ1Ijoic2lsdmVybGVzcyIsImEiOiJjaXNibDlmM2gwMDB2Mm9tazV5YWRmZTVoIn0.ilTX0t72N3P3XbzGFhUKcg';
+                    'yourtokenhere';
                 var map = new mapboxgl.Map({
                     container: 'map<?php echo ($counter); ?>',
-                    style: 'mapbox://styles/silverless/ckea9de6w02lj19qo7kwsdgp8',
+                    style: 'yourstylehere',
                     center: [<?php echo esc_attr($location['lng']); ?>,
                         <?php echo esc_attr($location['lat']); ?>
                     ],
